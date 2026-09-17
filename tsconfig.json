@@ -1,3 +1,6 @@
 {
-  "files": ["global.d.ts"]
+  "files": [],
+  "references": [
+    { "path": "./packages/protocol" }
+  ]
 }

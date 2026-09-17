@@ -11,9 +11,9 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "tsc -b",
+    "build": "npm run build --workspaces --if-present",
     "typecheck": "tsc -b --pretty false",
-    "test": "vitest run --passWithNoTests",
+    "test": "npm run test --workspaces --if-present",
     "test:watch": "vitest",
     "ci": "npm run typecheck && npm test"
   },
